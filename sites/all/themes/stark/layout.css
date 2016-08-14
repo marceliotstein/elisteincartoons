@@ -1,0 +1,146 @@
+/**
+ * @file
+ * Stark layout method
+ *
+ * To avoid obscuring CSS added to the page by Drupal or a contrib module, the
+ * Stark theme itself has no styling, except just enough CSS to arrange the page
+ * in a traditional "Header, sidebars, content, and footer" layout.
+ *
+ * This layout method works reasonably well, but shouldn't be used on a
+ * production site because it can break. For example, if an over-large image
+ * (one that is wider than 20% of the viewport) is in the left sidebar, the
+ * image will overlap with the #content to the right.
+ */
+
+body {
+	font-size: 12px; /* Resets 1em to 10px */
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	background-image: url('/sites/all/themes/stark/images/elibkr.gif'); 
+	color: #000;
+	text-align: center;
+	vertical-align: middle;
+}
+
+a {
+	text-decoration: none;
+	color: #2f2f00;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #5f5f00;
+}
+
+a:active {
+	text-decoration: underline;
+	color: #8f8f00;
+}
+
+#page {
+	text-align: left;
+	width: 767px;
+	margin: 0 auto;
+}
+
+h2 a {
+	text-decoration: none;
+	color: #000000;
+}
+
+h2 a:hover {
+	text-decoration: none;
+	color: #3f3f3f;
+}
+
+h2 a:active {
+	text-decoration: underline;
+	color: #6f6f6f;
+}
+  
+#topbar {
+    	height: 10px;
+}
+
+#tranny {
+        width: 10px;
+      	float: left;
+}
+
+p img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#content {
+	font-size: 1.2em
+	float: left;
+	width: 72%; 
+	vertical-align: top;
+}
+
+.column { 
+	background-color: white;
+	//-moz-border-radius: 10px;
+	//border-radius: 10px;
+	margin: 2px;
+	padding: 2px;
+	float: left;
+}
+
+#sidebar-first {
+	float: left;
+    	width: 24%; 
+   	//-moz-border-radius: 30px;
+    	//border-radius: 30px;
+	padding-bottom: 500px;
+    	margin: 2px;
+	vertical-align: top;
+}
+
+#sidebar-inner {
+        padding-left: 7px;
+	padding-right: 7px;
+}
+
+.node {
+        padding: 15px;
+ 	margin: 15px;
+        border-style: solid;
+	border-width: 1.4px;
+	border-color: black;
+   	-moz-border-radius: 8px;
+    	border-radius: 8px;
+}
+
+#esfooter {
+        padding: 15px;
+}
+
+.textformatter-list {
+  	font-size: 1.2em;
+	font-family: Georgia;
+	font-variant: small-caps;
+}
+
+.node-readmore {
+	font-weight: bold;
+}
+
+.comment-comments {
+	font-weight: bold;
+}
+
+.comment-add {
+	font-weight: bold;
+}
+
+h1 {
+	font-family: Georgia;
+	font-size: 2.0em;
+}
+
+h2 {
+	font-family: Georgia;
+	font-size: 1.9em;
+}
